@@ -1,7 +1,7 @@
 import $ from '../core';
 
 $.prototype.show = function() {
-    for (let i; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
         if (!this[i].style) {
             continue;
         }
@@ -12,7 +12,7 @@ $.prototype.show = function() {
 };
 
 $.prototype.hide = function() {
-    for (let i; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
         if (!this[i].style) {
             continue;
         }
@@ -23,7 +23,7 @@ $.prototype.hide = function() {
 };
 
 $.prototype.toggle = function() {
-    for (let i; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
         if (!this[i].style) {
             continue;
         }
@@ -33,7 +33,6 @@ $.prototype.toggle = function() {
         } else {
             this[i].style.display = 'none';
         }
-        
     }
 
     return this;

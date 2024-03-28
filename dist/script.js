@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core */ "./src/js/lib/core.js");
 
 _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.show = function () {
-  for (let i; i < this.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     if (!this[i].style) {
       continue;
     }
@@ -66,7 +66,7 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.show = function () {
   return this;
 };
 _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.hide = function () {
-  for (let i; i < this.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     if (!this[i].style) {
       continue;
     }
@@ -75,7 +75,7 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.hide = function () {
   return this;
 };
 _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggle = function () {
-  for (let i; i < this.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     if (!this[i].style) {
       continue;
     }
