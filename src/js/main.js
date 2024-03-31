@@ -1,13 +1,16 @@
 import './lib/lib';
- 
-$('#first').on('click', () => {
-    $('div').eq(1).fadeToggle(800);
-});
 
-$('[data-count="second"]').on('click',() => {
-    $('div').eq(2).fadeToggle(800);
-});
+$('.wrap').html(
+    `<div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">
+            dropdown button
+        </button>
+        <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+            <div href="#" class="dropdown-item">action #1</div>
+            <div href="#" class="dropdown-item">action #2</div>
+            <div href="#" class="dropdown-item">action #3</div>
+        </div>
+    </div>`
+);
 
-$('button').eq(2).on('click', () => {
-    $('.w-500').fadeToggle(800);
-});
+$('.dropdown-toggle').dropdown();
