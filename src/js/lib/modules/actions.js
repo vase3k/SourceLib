@@ -79,7 +79,6 @@ $.prototype.closest = function (selector) {
         delete this[counter];
     }
 
-    console.log(this);
     return this;
 };
 
